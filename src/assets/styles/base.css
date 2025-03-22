@@ -1,6 +1,6 @@
 :root {
   /* background colors */
-  --background-color-light: #FAFBFD;
+  --background-color-light: #C3C9CB;
   --background-color-dark: #0E0E0E;
 
   /* toolbar colors */
@@ -10,10 +10,19 @@
   /* text colors */
   --text-color-light: #2C2C2C;
   --text-color-dark: #FAFBFD;
+
+  /* border colors */
+  --border-color-light: #aab2b4;
+  --border-color-dark: #2C2C2C;
 }
 
 :root {
   --background-color: var(--background-color-light);
   --toolbar-bg-color: var(--toolbar-bg-color-light);
   --text-color: var(--text-color-light);
+  --border-color: var(--border-color-light);
+}
+
+.lower-canvas {
+  position: initial !important;
 }

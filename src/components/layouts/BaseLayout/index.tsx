@@ -1,4 +1,4 @@
-import { type PropsWithChildren, FC } from 'react';
+import type { PropsWithChildren, FC } from 'react';
 
 const BaseLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
