@@ -1,8 +1,11 @@
+import BaseLayout from './components/layouts/BaseLayout';
+import Canvas from './components/Canvas';
+
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <BaseLayout>
+      <Canvas />
+    </BaseLayout>
   );
 };
 
