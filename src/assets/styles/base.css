@@ -1,0 +1,19 @@
+:root {
+  /* background colors */
+  --background-color-light: #FAFBFD;
+  --background-color-dark: #0E0E0E;
+
+  /* toolbar colors */
+  --toolbar-bg-color-light: #F1F4F9;
+  --toolbar-bg-color-dark: #1A1A1A;
+
+  /* text colors */
+  --text-color-light: #2C2C2C;
+  --text-color-dark: #FAFBFD;
+}
+
+:root {
+  --background-color: var(--background-color-light);
+  --toolbar-bg-color: var(--toolbar-bg-color-light);
+  --text-color: var(--text-color-light);
+}
