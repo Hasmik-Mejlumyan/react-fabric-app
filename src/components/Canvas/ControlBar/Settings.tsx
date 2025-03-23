@@ -1,5 +1,5 @@
 import { useEffect, useState, type ChangeEvent } from 'react';
-import type { FabricObject } from 'fabric';
+import { FabricObject, TFiller } from 'fabric';
 
 import Input from '../../UI/Input';
 import SettingContainer from '../../shared/SettingContainer';
@@ -13,7 +13,7 @@ const Settings = () => {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
   const [diameter, setDiameter] = useState(0);
-  const [color, setColor] = useState<string | null>(null);
+  const [color, setColor] = useState<string | null | TFiller>(null);
   const [opacity, setOpacity] = useState(1);
 
   const handleObjectSelection = (object: FabricObject) => {
@@ -30,7 +30,7 @@ const Settings = () => {
       setColor(object.fill);
       setDiameter(0);
     } else if (object.type === 'circle') {
-      setDiameter(Math.round(object.radius * 2 * object.scaleX));
+      setDiameter(Math.round(object.width * object.scaleX));
       setColor(object.fill);
       setWidth(0);
       setHeight(0);
@@ -173,7 +173,7 @@ const Settings = () => {
             labelClassName="bg-toolbar-bg-color"
             wrapperClassName="min-w-[214px]"
             type="color"
-            value={color ?? ''}
+            value={(color as string) ?? ''}
             onChange={handleColorChange}
           />
           <Input
