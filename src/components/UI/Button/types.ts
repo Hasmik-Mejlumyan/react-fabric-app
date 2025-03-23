@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, PropsWithChildren } from 'react';
 
-export type ButtonVariantType = 'primary' | 'ghost';
+export type ButtonVariantType = 'primary' | 'ghost' | 'danger';
 export type ButtonSizeType = 'sm' | 'md' | 'lg';
 export type ButtonType = 'button' | 'icon';
 

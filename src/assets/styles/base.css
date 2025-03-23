@@ -1,6 +1,8 @@
 :root {
   --primary: #00EBFF;
   --primary-dark: #00C4FF;
+  --danger: #FF0042;
+  --danger-dark: #C30034;
   --brand-1: #009dff;
 
   /* background colors */
