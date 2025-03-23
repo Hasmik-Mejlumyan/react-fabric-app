@@ -30,6 +30,7 @@ const Settings = () => {
       setColor(object.fill);
       setDiameter(0);
     } else if (object.type === 'circle') {
+      // as object.radius was deprecated, I used object.width without multiplying by
       setDiameter(Math.round(object.width * object.scaleX));
       setColor(object.fill);
       setWidth(0);
