@@ -1,9 +1,10 @@
 import { useEffect, useState, type ChangeEvent } from 'react';
 import type { FabricObject } from 'fabric';
 
-import { useCanvas } from '../../../contexts/CanvasProvider';
 import Input from '../../UI/Input';
-import { Nut } from 'lucide-react';
+import SettingContainer from '../../shared/SettingContainer';
+
+import { useCanvas } from '../../../contexts/CanvasProvider';
 
 const Settings = () => {
   const { canvas } = useCanvas();
@@ -140,7 +141,7 @@ const Settings = () => {
 
 
   return (
-    <div className="flex flex-col gap-3 bg-toolbar-bg-color py-6 px-2 rounded text-left empty:p-0 shadow shadow-gray-200">
+    <SettingContainer>
       {selectedObject && selectedObject.type === 'rect' && (
         <>
           <Input
@@ -185,7 +186,7 @@ const Settings = () => {
           />
         </>
       )}
-    </div>
+    </SettingContainer>
   );
 };
 

@@ -1,6 +1,7 @@
 import { useState, useEffect, type ChangeEvent } from 'react';
 
 import Input from '../../UI/Input';
+import SettingContainer from '../../shared/SettingContainer';
 
 import { useCanvas } from '../../../contexts/CanvasProvider';
 
@@ -39,7 +40,7 @@ const CanvasSettings = () => {
   }, [canvasWidth, canvasHeight, canvas]);
 
   return (
-    <div className="flex flex-col gap-3 bg-toolbar-bg-color py-6 px-2 rounded text-left empty:p-0 shadow shadow-gray-200">
+    <SettingContainer>
       <Input
         label="Canvas Width"
         labelClassName="bg-toolbar-bg-color"
@@ -52,7 +53,7 @@ const CanvasSettings = () => {
         value={canvasHeight}
         onChange={handleHeightChange}
       />
-    </div>
+    </SettingContainer>
   );
 };
 
