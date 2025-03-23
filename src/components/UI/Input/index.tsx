@@ -16,7 +16,7 @@ const Input: FC<IInputProps> = ({
         {...props}
       />
       {label && (
-        <span className={`text-text-color absolute left-3 -top-2 bg-background-color px-1 leading-none text-xs ${labelClassName}`}>{label}</span>
+        <span className={`text-text-color absolute left-3 -top-1.5 bg-background-color px-1 leading-none text-xs ${labelClassName}`}>{label}</span>
       )}
     </div>
   );
