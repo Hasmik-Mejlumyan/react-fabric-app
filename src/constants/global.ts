@@ -11,3 +11,8 @@ export const elementsDefaultColors = {
 };
 
 export const textboxDefaultFontSize = 20;
+
+export const defaultCanvasSize = {
+  width: 500,
+  height: 500,
+};
