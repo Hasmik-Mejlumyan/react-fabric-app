@@ -13,6 +13,7 @@ export default {
         'border-color': 'var(--border-color)',
         'primary': 'var(--primary)',
         'primary-dark': 'var(--primary-dark)',
+        'brand-1': 'var(--brand-1)'
       }
     },
   },
