@@ -3,7 +3,7 @@ import { CircleIcon, SquareIcon, TypeIcon } from 'lucide-react';
 
 import Button from '../../UI/Button';
 
-import { useCanvas } from '../../../contexts/CanvasProvider.tsx';
+import { useCanvas } from '../../../contexts/CanvasProvider';
 
 import { elementsDefaultColors, textboxDefaultFontSize } from '../../../constants/global.ts';
 
@@ -31,14 +31,14 @@ const AddBasicElements = () => {
       return;
     }
 
-    const rect = new Circle({
+    const circle = new Circle({
       top: 150,
       left: 150,
       radius: 50,
       fill: elementsDefaultColors.circle,
     });
 
-    canvas.add(rect);
+    canvas.add(circle);
   };
 
   const addText = () => {
