@@ -10,6 +10,8 @@ import {
 } from 'react';
 import { Canvas } from 'fabric';
 
+import { defaultCanvasSize } from '../constants/global.ts';
+
 interface ICanvasContext {
   canvasRef: RefObject<HTMLCanvasElement | null>;
   canvas: Canvas | null;
@@ -18,17 +20,18 @@ interface ICanvasContext {
 const CanvasContext = createContext<ICanvasContext>({} as ICanvasContext);
 
 const CanvasProvider: FC<PropsWithChildren> = ({ children }) => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
   const [canvas, setCanvas] = useState<Canvas | null>(null);
+
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     if (canvasRef.current) {
       const initCanvas = new Canvas(canvasRef.current, {
-        width: 500, // TODO move value to constants
-        height: 500, // TODO move value to constants
+        width: defaultCanvasSize.width,
+        height: defaultCanvasSize.height,
       });
 
-      initCanvas.backgroundColor = '#fff'; // TODO adjust for dark mode
+      initCanvas.backgroundColor = '#fff';
       initCanvas.renderAll();
 
       setCanvas(initCanvas);
