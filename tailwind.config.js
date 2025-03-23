@@ -11,6 +11,8 @@ export default {
         'toolbar-bg-color': 'var(--toolbar-bg-color)',
         'text-color': 'var(--text-color)',
         'border-color': 'var(--border-color)',
+        'primary': 'var(--primary)',
+        'primary-dark': 'var(--primary-dark)',
       }
     },
   },
