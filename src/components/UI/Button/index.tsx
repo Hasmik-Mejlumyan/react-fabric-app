@@ -12,6 +12,7 @@ const Button: FC<IButtonProps> = ({
   const variantClasses = {
     primary: 'text-text-color bg-primary hover:bg-primary-dark',
     ghost: 'text-text-color bg-transparent hover:bg-border-color',
+    danger: 'text-white bg-danger hover:bg-danger-dark',
   };
 
   const sizeClasses = {
