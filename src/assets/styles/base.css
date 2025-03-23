@@ -7,7 +7,7 @@
 
   /* background colors */
   --background-color-light: #C3C9CB;
-  --background-color-dark: #0E0E0E;
+  --background-color-dark: #232222;
 
   /* toolbar colors */
   --toolbar-bg-color-light: #F1F4F9;
@@ -19,7 +19,7 @@
 
   /* border colors */
   --border-color-light: #aab2b4;
-  --border-color-dark: #2C2C2C;
+  --border-color-dark: #aab2b4;
 }
 
 :root {
@@ -27,6 +27,22 @@
   --toolbar-bg-color: var(--toolbar-bg-color-light);
   --text-color: var(--text-color-light);
   --border-color: var(--border-color-light);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --toolbar-bg-color: var(--toolbar-bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --border-color: var(--border-color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--background-color-dark);
+    --toolbar-bg-color: var(--toolbar-bg-color-dark);
+    --text-color: var(--text-color-dark);
+    --border-color: var(--border-color-dark);
+  }
 }
 
 .lower-canvas {
