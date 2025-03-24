@@ -29,13 +29,6 @@
   --border-color: var(--border-color-light);
 }
 
-[data-theme="dark"] {
-  --background-color: var(--background-color-dark);
-  --toolbar-bg-color: var(--toolbar-bg-color-dark);
-  --text-color: var(--text-color-dark);
-  --border-color: var(--border-color-dark);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--background-color-dark);
@@ -43,6 +36,20 @@
     --text-color: var(--text-color-dark);
     --border-color: var(--border-color-dark);
   }
+}
+
+[data-theme="light"] {
+  --background-color: var(--background-color-light);
+  --toolbar-bg-color: var(--toolbar-bg-color-light);
+  --text-color: var(--text-color-light);
+  --border-color: var(--border-color-light);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --toolbar-bg-color: var(--toolbar-bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --border-color: var(--border-color-dark);
 }
 
 .lower-canvas {
