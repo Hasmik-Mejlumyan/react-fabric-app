@@ -7,6 +7,10 @@ The website is deployed on [Vercel](https://vercel.com/). <br>
 Website: https://react-fabric-app.vercel.app
 
 ## 🔍 Table of Contents
+- [📦 Installation](#-installation)
+- [🚀 Performance optimization](#-performance-optimization)
+- [🔧 Pipeline Setup](#-pipeline-setup)
+- [💻 Tech Stack](#-tech-stack)
 
 ## 📦 Installation
 1. Clone the repository
@@ -39,7 +43,7 @@ Simple techniques were used for performance optimization such as
 2. Used Fabric.js library, instead of Canvas API with `requestAnimationFrame`
 3. Used **React Context API** instead of prop drilling
 
-## Pipeline Setup
+## 🔧 Pipeline Setup
 A basic template was used only for checking PRs, specifically **lints** and **build check**. <br>
 The deployment part was taken care of by **Vercel**. <br>
 PR Check consists of the following jobs.
